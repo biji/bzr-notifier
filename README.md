@@ -1,5 +1,6 @@
 # bzr-notifier
-Server side email notifier for bazaar
+Server side email notifier for bazaar. 
+Will create last email sent revno in .bzr/branch/bzr-notifier.txt
 
 To setup:
 
