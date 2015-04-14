@@ -38,7 +38,7 @@ for dir1 in dirs:
 			if last_sent < revno:
 				# send email
 				email_subject = branch + " revno " + subprocess.check_output(["bzr","log","-l1","--line",branch]).strip()
-				email_body = subprocess.check_output(["bzr","log","-l1","-v",branch])
+				email_body = subprocess.check_output(["bzr","log","-l10","-v","-r%d.." % (last_sent + 1),branch])
 				email_date = email.utils.formatdate(localtime=True)
 
 				#print email_subject
