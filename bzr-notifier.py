@@ -49,6 +49,7 @@ To: %s
 Subject: %s
 Date: %s
 
+This is automated message from versioning server.
 %s""" % (sender, ', '.join(recipients), email_subject, email_date, email_body)	
 
 				#print message
